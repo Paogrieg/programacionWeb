@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container{
+    display: flex;
+    background-color: antiquewhite;
+    padding: 10px;
+    gap: 10px;
+}
+.flex-container div{
+    height: 150px;
+    border: 1px solid #717171;
+    flex-grow: 1;/*Siempre ocupan el mismo espacio, se distribuye solito*/
+}
+.flex2{
+    background-color: azure;
+    display: flex;
+    gap: 2px;
+    /*justify-content: space-between;Espacio igual entre los hijos*/
+    justify-content: center;
+}
+.flex2 div{
+    width: 200px;
+    height: 70px;
+    background-color: cadetblue;
+}
+.vertical{
+    width: 100%;/*100% conforme al papá*/
+    height:100vh;/*100% del tamaño del dispositivo que uses viewport height*/
+    background-color: burlywood;
+    display: flex;
+    align-items: center;/*Centra en vertical*/
+    justify-content: space-between;/*Mismo espacio entre los hijos*/
+}
+.vertical div{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
